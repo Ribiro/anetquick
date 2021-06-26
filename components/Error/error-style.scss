@@ -1,0 +1,66 @@
+.error-wrap {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  @include breakpoints-down(sm) {
+    margin: spacing(20, 0, 10)
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center
+}
+
+.deco {
+  position: relative;
+  @include breakpoints-down(md) {
+    height: 320px
+  }
+  h3 {
+    font-family: 'Roboto Condensed';
+    color: $palette-common-white;
+    font-size: 106px;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding-top: 40px;
+    @include padding-left(20px);
+    position: relative;
+    z-index: 1
+  }
+  &:before {
+    content: "";
+    width: 210px;
+    height: 220px;
+    background: $palette-primary-main;
+    border-radius: 24px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: $spacing1 * -1;
+    @include left(0)
+  }
+}
+
+.text {
+  @include breakpoints-up(md) {
+    @include border-left(1px solid);
+    @include palette-divider;
+    @include padding-left($spacing5);
+  }
+  @include breakpoints-down(md) {
+    text-align: center;
+  }
+  h4 {
+    font-weight: $font-bold;
+    margin-bottom: $spacing3  
+  }
+  p {
+    font-size: 22px;
+    @include palette-text-secondary
+  }
+}
+
+.button {
+  margin-top: $spacing4
+}

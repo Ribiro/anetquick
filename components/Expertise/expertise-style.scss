@@ -1,0 +1,149 @@
+$green-buble: '/images/agency/green_buble.png';
+$blue-buble: '/images/agency/blue_buble.png';
+$violet-buble: '/images/agency/violet_buble.png';
+
+.root {
+  position: relative;
+  @include breakpoints-down(sm) {
+    text-align: center;
+  }
+  h4 {
+    @include breakpoints-down(sm) {
+      margin-top: $spacing2 * -1;
+      margin-bottom: $spacing3
+    }
+  }
+}
+
+.background {
+  width: 560px;
+  height: 560px;
+  top: $spacing10 * 11;
+  @include left(20%);
+  position: absolute;
+  transform: scale(3);
+  &.front {
+    opacity: 0.2;
+    .theme--dark & {
+      fill:  $palette-primary-light;
+    }
+    .theme--light & {
+      fill: $palette-primary-light
+    }
+  }
+  &.base {
+    .theme--dark & {
+      fill: $palette-common-black;
+    }
+    .theme--light & {
+      fill: $palette-common-white;
+    }
+  }
+  @include breakpoints-down(sm) {
+    top: $spacing10 * 8
+  }
+  @include breakpoints-down(xs) {
+    display: none
+  }
+}
+
+.decoration {
+  .theme--dark & {
+    fill: $palette-primary-dark;
+    stroke: $palette-primary-dark;
+  }
+  .theme--light & {
+    fill: $palette-primary-light;
+    stroke: $palette-primary-light;
+  }
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  top: -200px;
+  @include left(-240px);
+  background-size: 100%
+}
+
+.desc {
+  line-height: 32px;
+  padding: spacing(0, 4);
+  @include breakpoints-up(sm) {
+    padding: $spacing4
+  }
+}
+
+.parallax-wrap {
+  position: absolute;
+  top: 0;
+  @include left(0);
+  transform-origin: top;
+  width: 1200px;
+  span {
+    background-size: 100%;
+    display: block;
+    position: relative;
+  }
+  @include breakpoints-down(md) {
+    display: none
+  }
+}
+
+.icon-green {
+  top: -179px;
+  @include left(30px);
+  width: 320px;
+  height: 600px;
+  background: url($green-buble) no-repeat
+}
+
+.icon-violet {
+  width: 560px;
+  height: 560px;
+  @include left(-50px);
+  top: -620px;
+  background: url($violet-buble) no-repeat
+}
+
+.icon-blue {
+  width: 560px;
+  height: 560px;
+  @include left(0px);
+  top: -1170px;
+  background: url($blue-buble) no-repeat
+}
+
+.running-tag {
+  position: relative;
+  height: 130px;
+  padding: spacing(0, 4);
+  .slick-active {
+    .tag-item {
+      background: $palette-primary-main;
+      color: $palette-common-white;
+      border-color: $palette-primary-main
+    }
+  }
+}
+
+.tag-item {
+  display: inline-block;
+  border-radius: 4px;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in;
+  border: 1px solid;
+  font-size: 14px;
+  @include palette-divider;
+  @include margin-right($spacing1);
+  margin-bottom: 17px;
+  padding: $spacing1 / 2;
+  @include breakpoints-up(md) {
+    padding: spacing(0.5, 4)
+  }
+}
+
+.tag-group {
+  display: block;
+  &:focus {
+    outline: none;
+  }
+}

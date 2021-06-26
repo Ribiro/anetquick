@@ -1,0 +1,90 @@
+.root {
+  blockquote {
+    font-size: 28px;
+    font-style: italic;
+    @include palette-text-secondary;
+    .v-application--is-ltr & {
+      border-left: 4px solid;
+    }
+    .v-application--is-rtl & {
+      border-right: 4px solid;
+    }
+    .theme--light & {
+      border-left-color: #D8D8D8;
+    }
+    .theme--dark & {
+      border-left-color: rgba(0, 0, 0, 0.38);
+    }
+    @include padding-left($spacing5);
+    margin: spacing(5, 0, 0);
+    @include breakpoints-down(xs) {
+      @include padding-left($spacing2);
+      margin: 0;
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+  h4 {
+    @include breakpoints-down(sm) {
+      text-align: center;
+      margin-top: $spacing1 * -3;
+    }
+  }
+}
+
+.puzzle {
+  position: relative;
+  @include left(60px);
+  top: -40px;
+  div {
+    .v-application--is-rtl & {
+      transform: rotate(-45deg);
+    }
+    .v-application--is-ltr & {
+      transform: rotate(45deg);
+    }
+    overflow: hidden;
+    position: absolute;
+    background: #dedede;
+  }
+  span {
+    background: url($imgAPI-new1) no-repeat fixed;
+    background-size: auto 800px;
+    .v-application--is-rtl & {
+      transform: rotate(45deg);
+    }
+    .v-application--is-ltr & {
+      transform: rotate(-45deg);
+    }
+    width: 560px;
+    height: 1000px;
+    display: block;
+    position: relative;
+    top: -110px;
+    @include left(0)
+  }
+}
+
+.piece-big {
+  width: 300px;
+  height: 150px;
+  top: -175px;
+  border-radius: 32px;
+  @include left(100px)
+}
+
+.piece-small-top {
+  width: 100px;
+  height: 100px;
+  border-radius: 24px;
+  top: 12px;
+  @include left(170px)
+}
+
+.piece-small-bottom {
+  width: 100px;
+  height: 100px;
+  border-radius: 24px;
+  top: 90px;
+  @include left(90px)
+}

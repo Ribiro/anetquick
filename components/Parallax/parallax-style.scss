@@ -1,0 +1,141 @@
+.parallax-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  z-index: 0;
+  @include breakpoints-down(md) {
+    display: none;
+  }
+}
+
+.inner-parallax {
+  height: 800px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  .figure {
+    height: 800px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    ::v-deep .Masthead, ::v-deep .Masthead__image {
+      overflow: visible
+    }
+  }
+  .figure > div {
+    height: 800px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.inner-parallax-single {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  display: block;
+  .figure {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    position: absolute;
+  }
+  .figure > div {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    position: absolute;
+  }
+}
+
+.parallax-square {
+  transform: rotate(45deg);
+  position: absolute;
+  @include breakpoints-up(xl) {
+    display: none
+  }
+}
+
+.parallax-primary {
+  background: $palette-primary-main;
+  width: 405px;
+  height: 405px;
+  opacity: 0.08;
+  border-radius: 80px
+}
+
+.parallax-secondary {
+  background: $palette-secondary-main;
+  width: 205px;
+  height: 205px;
+  opacity: 0.1;
+  border-radius: 40px
+}
+
+.parallax-secondary-single {
+  background:$palette-secondary-main;
+  width: 305px;
+  height: 305px;
+  opacity: 0.08;
+  border-radius: 40px;
+}
+
+.banner {
+  .parallax-primary {
+    @include right(300px);
+    top: 110px;
+  }
+  .parallax-secondary {
+    @include right(100px);
+    top: 100px
+  }
+}
+
+.about {
+  top: 350px;
+  .parallax-primary {
+    @include left(60px);
+    top: 190px;
+  }
+  .parallax-secondary {
+    @include left(0px);
+  }
+}
+
+.dots-wrap {
+  top: 800px;
+  height: 1000px;
+  position: absolute;
+  z-index: 2
+}
+
+.testi {
+  top: -400px;
+  @include left(50px)
+}
+
+.parallax-dot {
+  .theme--dark & {
+    fill: $dark-text-hint
+  } 
+  .theme--light & {
+    fill: $light-text-hint
+  } 
+  width: 845px;
+  height: 1099px;
+  opacity: 0.2;
+  top: 90px;
+  @include left(10px);
+  transform: scale(0.5);
+  position: absolute;
+  .v-application--is-rtl & {
+    transform-origin: top right;
+  }
+  .v-application--is-ltr & {
+    transform-origin: top left;
+  }
+}

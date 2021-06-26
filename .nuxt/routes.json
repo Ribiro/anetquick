@@ -1,0 +1,128 @@
+[
+  {
+    "name": "index___ar",
+    "path": "/ar",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_577a917e"
+  },
+  {
+    "name": "blank-page___en",
+    "path": "/blank-page",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/blank-page.vue",
+    "chunkName": "pages/blank-page",
+    "_name": "_2126436c"
+  },
+  {
+    "name": "contact___en",
+    "path": "/contact",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_546cc0cc"
+  },
+  {
+    "name": "index___de",
+    "path": "/de",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_577a917e"
+  },
+  {
+    "name": "index___id",
+    "path": "/id",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_577a917e"
+  },
+  {
+    "name": "index___pt",
+    "path": "/pt",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_577a917e"
+  },
+  {
+    "name": "index___zh",
+    "path": "/zh",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_577a917e"
+  },
+  {
+    "name": "blank-page___ar",
+    "path": "/ar/blank-page",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/blank-page.vue",
+    "chunkName": "pages/blank-page",
+    "_name": "_2126436c"
+  },
+  {
+    "name": "contact___ar",
+    "path": "/ar/contact",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_546cc0cc"
+  },
+  {
+    "name": "blank-page___de",
+    "path": "/de/blank-page",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/blank-page.vue",
+    "chunkName": "pages/blank-page",
+    "_name": "_2126436c"
+  },
+  {
+    "name": "contact___de",
+    "path": "/de/contact",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_546cc0cc"
+  },
+  {
+    "name": "blank-page___id",
+    "path": "/id/blank-page",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/blank-page.vue",
+    "chunkName": "pages/blank-page",
+    "_name": "_2126436c"
+  },
+  {
+    "name": "contact___id",
+    "path": "/id/contact",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_546cc0cc"
+  },
+  {
+    "name": "blank-page___pt",
+    "path": "/pt/blank-page",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/blank-page.vue",
+    "chunkName": "pages/blank-page",
+    "_name": "_2126436c"
+  },
+  {
+    "name": "contact___pt",
+    "path": "/pt/contact",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_546cc0cc"
+  },
+  {
+    "name": "blank-page___zh",
+    "path": "/zh/blank-page",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/blank-page.vue",
+    "chunkName": "pages/blank-page",
+    "_name": "_2126436c"
+  },
+  {
+    "name": "contact___zh",
+    "path": "/zh/contact",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_546cc0cc"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "/home/ribiro/WebstormProjects/anetquick/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_577a917e"
+  }
+]

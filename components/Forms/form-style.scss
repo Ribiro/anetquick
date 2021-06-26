@@ -1,0 +1,204 @@
+.form-wrap {
+  margin-top: $spacing10;
+  position: relative;
+  text-align: center;
+  @include palette-text-secondary;
+  h3 {
+    font-family: 'Roboto Condensed';
+    font-weight: $font-bold;
+    .theme--dark & {
+      color: $palette-primary-light
+    }
+    .theme--light & {
+      color: $palette-primary-dark
+    }
+    @include breakpoints-down(md) {
+      font-size: 36px
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacing5;
+  &.logo-header {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+  img {
+    width: 64px
+  }
+  p, span {
+    display: block;
+    font-size: 24px;
+    padding-bottom: 4px;
+    font-weight: $font-bold;
+  }
+}
+
+.desc {
+  @include breakpoints-up(md) {
+    font-size: 20px;
+    padding: spacing(0, 10);
+  }
+}
+
+.input {
+  width: 100%
+}
+
+.form {
+  @include text-align(left);
+  position: relative;
+  margin-top: $spacing5;
+  padding-bottom: $spacing10;
+  @include breakpoints-up(lg) {
+    padding: spacing(0, 15, 10)
+  }
+}
+
+.btn-area {
+  margin-top: $spacing5;
+  label {
+    @include text-align(left)
+  }
+  @include breakpoints-up(sm) {
+    display: flex;
+    justify-content: space-between
+  }
+  @include breakpoints-down(xs) {
+    text-align: center;
+    button {
+      margin-top: $spacing5
+    }
+  }
+  span {
+    a {
+      color: $palette-primary-main
+    }
+  }
+}
+
+.decoration {
+  position: fixed;
+  width: 100%;
+  height: 120%;
+  top: 0;
+  @include left(0);
+  overflow: hidden;
+  .primary {
+    background: $palette-primary-main;
+    position: absolute;
+    opacity: 0.08;
+    .v-application--is-rtl & {
+      transform: rotate(-45deg);
+    }
+    .v-application--is-ltr & {
+      transform: rotate(45deg);
+    }
+  }
+
+  .secondary {
+    background: $palette-secondary-main;
+    position: absolute;
+    opacity: 0.1;
+    .v-application--is-rtl & {
+      transform: rotate(-45deg);
+    }
+    .v-application--is-ltr & {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+
+.deco-top {
+  .primary {
+    border-radius: 80px;
+    width: 405px;
+    height: 405px;
+    top: -200px;
+    @include right(-50px)
+  }
+  .secondary {
+    border-radius: 40px;
+    width: 205px;
+    height: 205px;
+    top: 24px;
+    @include right(-100px)
+  }
+}
+
+.deco-bottom {
+  .primary {
+    border-radius: 40px;
+    width: 205px;
+    height: 205px;
+    bottom: 180px;
+    @include left(-110px);
+  }
+  .secondary {
+    border-radius: 80px;
+    width: 405px;
+    height: 405px;
+    bottom: -100px;
+    @include left(-110px);
+  }
+}
+
+.right-icon {
+  @include margin-left($spacing1)
+}
+
+.form-control-label {
+  ::v-deep .v-messages {
+    min-height: 0;
+  }
+  > div {
+    margin-top: 0
+  }
+}
+
+.backtohome {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  @include left(60px);
+  top: -60px;
+  @include breakpoints-down(sm) {
+    @include left(calc(50% - 40px));
+    top: -120px
+  }
+  i {
+    font-size: 36px;
+    @include palette-text-disabled;
+  }
+  > span i:first-child {
+    opacity: 1;
+    transition: opacity 0.3s ease
+  }
+  > span i:last-child {
+    position: absolute;
+    @include right(0);
+    opacity: 0;
+    transition: all 0.3s ease
+  }
+  &:hover {
+    > span i:first-child {
+      opacity: 0;
+    }
+    > span i:last-child {
+      @include right(27px);
+      opacity: 1;
+    }
+  }
+}
+
+.notification {
+  .v-btn--round .v-btn__content .v-icon {
+    color: #FFF
+  }
+}

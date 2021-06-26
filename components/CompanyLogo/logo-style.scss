@@ -1,0 +1,19 @@
+ .root {
+  width: 100%;
+  overflow: auto;
+}
+
+.logo {
+  display: flex;
+  position: relative;
+  z-index: 5;
+  margin: spacing(20, 0, 0);
+  @include breakpoints-up(md) {
+    justify-content: center
+  }
+  img {
+    height: 64px;
+    margin: spacing(0, 4);
+    filter: grayscale(1) contrast(0.5) brightness(1.5)
+  }
+}
