@@ -25,6 +25,7 @@
               large
               color="secondary"
               class="button"
+              to="/contact"
             >
               Get Quote
               <v-icon class="icon">mdi-send</v-icon>
